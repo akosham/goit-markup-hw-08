@@ -1,0 +1,35 @@
+.tasks {
+  background-color: var(--background-color);
+  padding-top: 0;
+}
+.tasks__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--main-text-color);
+  margin-bottom: 50px;
+}
+.tasks__list {
+  display: flex;
+  gap: 30px;
+}
+
+.tasks__item {
+  position: relative;
+}
+
+.tasks__text {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  color: var(--background-color);
+  background-color: rgba(47, 48, 58, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}

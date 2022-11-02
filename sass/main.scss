@@ -1,0 +1,20 @@
+@import './utils/reset';
+@import './utils/vissually-hidden.scss';
+@import './utils/vars';
+@import './utils/mixin';
+
+@import './components/container.scss';
+@import './components/section.scss';
+@import './components/body';
+@import './components/logo';
+@import './components/btn';
+
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/features';
+@import './layouts/tasks';
+@import './layouts/team-mates';
+@import './layouts/clients';
+@import './layouts/footer';
+@import './layouts/backdrop';
+@import './layouts/portfolio';
