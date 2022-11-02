@@ -1,22 +1,44 @@
 .tasks {
   background-color: var(--background-color);
-  padding-top: 0;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 0;
+  }
 }
 .tasks__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   color: var(--main-text-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
 }
 .tasks__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
+
+  @media screen and(min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
 }
 
 .tasks__item {
   position: relative;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: auto;
+  }
 }
 
 .tasks__text {
