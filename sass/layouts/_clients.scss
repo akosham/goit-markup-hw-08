@@ -2,22 +2,35 @@
   background-color: var(--background-color);
 }
 .clients__title {
-  @include font(700, 36, 1.17, null, center);
-  // font-weight: 700;
-  // font-size: 36px;
-  // line-height: 1.17;
-  // text-align: center;
+  @include font(700, 28, 1.18, 0.03, center);
   color: var(--main-text-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    @include font(700, 36, 1.17, null, center);
+  }
 }
 .clients__list {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
+}
+
+.clients__item {
+  width: calc((100% - 30px) / 2);
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .clients__link {
-  width: 170px;
   height: 92px;
   align-items: center;
   border: 1px solid #afb1b8;
