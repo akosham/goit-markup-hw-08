@@ -28,7 +28,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  height: auto;
   width: 100%;
 }
 
@@ -295,17 +294,26 @@ body {
 
 .features__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .features__list {
+    flex-wrap: nowrap;
+  }
 }
 
 .features__item {
-  width: 270px;
   align-items: center;
   justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  .features__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
 
 .features__link {
-  width: 270px;
   height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
@@ -323,6 +331,12 @@ body {
   text-transform: uppercase;
   margin-bottom: 10px;
   color: var(--main-text-color);
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .features__subtitle {
+    text-align: left;
+  }
 }
 
 .features__text {
