@@ -10,16 +10,16 @@
   border: rgba(47, 48, 58, 0.4);
   max-width: 480px;
   height: 400px;
-  // max-width: 1600px;
-  // height: 600px;
   margin: 0 auto;
 
   @include tablet {
+    max-width: 768px;
   }
 
   @include desktop {
     padding-top: 200px;
     padding-bottom: 200px;
+    // width: 1200px;
     max-width: 1600px;
     height: 600px;
   }
@@ -29,12 +29,12 @@
   @include font(900, 26, 1.62, 0.06, center);
   text-transform: uppercase;
   color: var(--secondary-text-color);
-  // max-width: 696px;
   max-width: 360px;
   margin: 0 auto 30px auto;
 
   @include desktop {
     @include font(900, 44, 1.36, 0.06, center);
+    max-width: 696px;
   }
 }
 
