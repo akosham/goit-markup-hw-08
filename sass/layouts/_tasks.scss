@@ -1,7 +1,7 @@
 .tasks {
   background-color: var(--background-color);
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     padding-top: 0;
   }
 }
@@ -13,7 +13,7 @@
   color: var(--main-text-color);
   margin-bottom: 30px;
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     font-size: 36px;
     line-height: 1.17;
     margin-bottom: 50px;
@@ -24,7 +24,7 @@
   flex-wrap: wrap;
   gap: 30px;
 
-  @media screen and(min-width: 1200px) {
+  @include desktop {
     flex-wrap: nowrap;
   }
 }
@@ -32,11 +32,12 @@
 .tasks__item {
   position: relative;
   width: 100%;
-  @media screen and (min-width: 768px) {
+
+  @include tablet {
     width: calc((100% - 30px) / 2);
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: auto;
   }
 }
