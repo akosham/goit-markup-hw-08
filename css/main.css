@@ -601,7 +601,9 @@ body {
 
 .footer__container {
   display: flex;
-  align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer__logo {

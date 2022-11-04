@@ -2,11 +2,15 @@
   background-color: var(--background-footer-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  // height: auto;
 }
 
 .footer__container {
   display: flex;
-  align-items: baseline;
+  // align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer__logo {
