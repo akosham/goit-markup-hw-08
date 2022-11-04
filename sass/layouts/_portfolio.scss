@@ -3,10 +3,27 @@
 }
 
 .filers-list {
-  margin-bottom: 50px;
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  flex-wrap: wrap;
   gap: 8px;
+  margin-bottom: 40px;
+
+  @include tablet {
+    margin-bottom: 30px;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  @include desktop {
+    margin-bottom: 50px;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+}
+
+.filters-item {
+  display: block;
 }
 
 .filters-btn {
@@ -43,7 +60,15 @@
 }
 
 .project-item {
-  width: calc((100% - 60px) / 3);
+  width: 100%;
+
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @include desktop {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .project-item:hover .project-hidden-text {
