@@ -2,22 +2,15 @@
   background-color: var(--background-footer-color);
   padding-top: 60px;
   padding-bottom: 60px;
-
-  // // height: 603px;
-
-  // @include tablet {
-  //   // height: 463px;
-  // }
 }
 
 .footer__container {
   display: flex;
-  align-items: baseline;
-  // flex-wrap: wrap;
-  // justify-content: center;
-  // align-items: center;
 
+  flex-wrap: wrap;
   gap: 60px;
+  text-align: center;
+  justify-content: center;
 
   @include tablet {
     justify-content: space-around;
@@ -26,25 +19,15 @@
   @include desktop {
     flex-wrap: nowrap;
     align-items: baseline;
+    justify-content: flex-start;
+    text-align: left;
+    gap: 0;
   }
 }
 
 .footer__logo {
   margin-bottom: 20px;
   display: inline-block;
-  text-align: center;
-
-  @include desktop {
-    text-align: left;
-  }
-}
-
-.info {
-  text-align: center;
-
-  @include desktop {
-    text-align: left;
-  }
 }
 
 .logo-link-light {
@@ -83,12 +66,8 @@
 }
 
 .social {
-  // margin-left: 70px;
-  text-align: center;
-
   @include desktop {
     margin-left: 70px;
-    text-align: left;
   }
 }
 
@@ -98,8 +77,8 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
-  text-align: center;
 }
+
 .social__list {
   display: inline-flex;
   justify-content: center;
@@ -134,21 +113,17 @@
 }
 
 .mail-form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
   position: relative;
-  flex-wrap: wrap;
 
-  @include tablet {
+  @include desktop {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
   }
 }
 
 .mail-form__input {
-  // width: 358px;
-  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -160,9 +135,14 @@
   color: rgba(255, 255, 255, 0.6);
   background-color: var(--background-footer-color);
   padding-left: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+  width: 450px;
+  margin-bottom: 20px;
+
+  @include desktop {
+    width: 358px;
+    margin-bottom: 0;
+  }
 }
 
 .mail-form__btn {
@@ -174,6 +154,8 @@
   display: block;
   gap: 10px;
   position: relative;
+
+  margin: 0 auto;
 }
 
 .mail-form__icon {
