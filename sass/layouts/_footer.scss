@@ -136,8 +136,16 @@
   background-color: var(--background-footer-color);
   padding-left: 16px;
 
-  width: 450px;
+  width: 300px;
   margin-bottom: 20px;
+
+  @include mobile {
+    width: 450px;
+  }
+
+  @include tablet {
+    width: 450px;
+  }
 
   @include desktop {
     width: 358px;

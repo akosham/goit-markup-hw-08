@@ -84,6 +84,7 @@ html {
   --background-color: #ffffff;
   --icon-color: #afb1b8;
   --main-font: Roboto, sans-serif;
+  --bg-gradient: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 }
 
 .container {
@@ -259,7 +260,7 @@ body {
   padding-top: 118px;
   padding-bottom: 118px;
   background-color: #c4c4c4;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
+  background-image: var(--bg-gradient), url(../images/hero-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -268,9 +269,20 @@ body {
   height: 400px;
   margin: 0 auto;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--bg-gradient), url(../images/hero-bg-mob-2x.jpg);
+  }
+}
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
+    background-image: var(--bg-gradient), url(../images/hero-bg-tab.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--bg-gradient), url(../images/hero-bg-tab-2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -279,7 +291,18 @@ body {
     padding-bottom: 200px;
     max-width: 1600px;
     height: 600px;
+    background-image: var(--bg-gradient), url(../images/hero-bg.jpg);
   }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--bg-gradient), url(../images/hero-bg-2x.jpg);
+  }
+}
+
+.hero__container {
+  padding: 0;
+  width: 100%;
 }
 
 .hero__title {
@@ -721,8 +744,18 @@ body {
   color: rgba(255, 255, 255, 0.6);
   background-color: var(--background-footer-color);
   padding-left: 16px;
-  width: 450px;
+  width: 300px;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 480px) {
+  .mail-form__input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mail-form__input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .mail-form__input {
