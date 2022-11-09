@@ -22,7 +22,7 @@
     />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
         <nav class="nav">
           <a class="logo nav__logo link" href="./index.html" lang="en"
@@ -58,8 +58,69 @@
             >
           </li>
         </ul>
+        <button type="button" class="menu-open-btn" data-menu-open>
+          <svg width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-mob-icon"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="menu_container">
+          <div class="mob-menu_top">
+            <button type="button" class="menu-close-btn" data-menu-close>
+              <svg width="40" height="40">
+                <use href="./images/symbol-defs.svg#icon-close"></use>
+              </svg>
+            </button>
+            <ul class="mob-menu_list list">
+              <li class="mob-menu__item">
+                <a class="mob-menu__link link" href="./index.html">Студія</a>
+              </li>
+              <li class="mob-menu__item">
+                <a class="mob-menu__link link current-mob" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="mob-menu__item">
+                <a class="mob-menu__link link" href="./index.html">Контакти</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu_bottom">
+            <ul class="mob-connect list">
+              <li class="mob-connect__item">
+                <a class="mob-connect-t__link link" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+              <li class="mob-connect__item">
+                <a class="mob-connect-m__link link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="net list">
+              <li class="net_item">
+                <a class="net__link link" href="" target="_blank" rel="noopener noreferrer nofollow"
+                  >Instagram</a
+                >
+              </li>
+              <li class="net_item">
+                <a class="net__link link" href="" target="_blank" rel="noopener noreferrer nofollow"
+                  >Twitter</a
+                >
+              </li>
+              <li class="net_item">
+                <a class="net__link link" href="" target="_blank" rel="noopener noreferrer nofollow"
+                  >Facebook</a
+                >
+              </li>
+              <li class="net_item">
+                <a class="net__link link" href="" target="_blank" rel="noopener noreferrer nofollow"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
       <section class="project section">
         <div class="container">
@@ -222,7 +283,7 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer__container">
         <div class="info">
           <a class="logo footer__logo link" href="./index.html" lang="en"
@@ -309,6 +370,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
