@@ -100,6 +100,7 @@
   @include font(500, null, 1.14, 0.02, center);
   color: var(--ouwer-text-color);
   display: flex;
+  align-items: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
