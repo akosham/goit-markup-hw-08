@@ -108,12 +108,22 @@
   border: 1px solid var(--contener-color);
   border-top: none;
   background-color: var(--background-color);
+
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    flex-grow: 1;
+  }
 }
 
 .project-link {
   display: block;
   transition: cursor 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+  }
 }
 
 .project-subtitle {
